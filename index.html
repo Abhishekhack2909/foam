@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-container" id="loadingContainer">
+        <div class="loading-animation">
+            <div class="loading-circle"></div>
+            <div class="loading-text">
+                <h2>Design Conference 2025</h2>
+                <p>Loading Registration Form...</p>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Form -->
+    <div class="box" id="mainForm">
+        <div class="registration">
+            <div class="registrationBx">
+                <h2>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Event Registration
+                    <i class="fa-solid fa-heart"></i>
+                </h2>
+                
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                
+                <div class="interests-section">
+                    <p>Design Interest Areas:</p>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="UI/UX Design">
+                            UI/UX Design
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="Graphic Design">
+                            Graphic Design
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="Web Design">
+                            Web Design
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="Motion Graphics">
+                            Motion Graphics
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="Branding">
+                            Branding
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="interests" value="Product Design">
+                            Product Design
+                        </label>
+                    </div>
+                </div>
+                
+                <input type="submit" value="Register Now" onclick="submitForm()" />
+                
+                <div class="group">
+                    <a href="#">Need Help?</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✓</div>
+            <h3>Registration Successful!</h3>
+            <p>We'll send you event details soon.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
